@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template_string
 
 app = Flask(__name__)
-CORRECT_PASSWORD = "482"  # pick your own 3-digit password
+CORRECT_PASSWORD = "482"  # example 3-digit password
 
 LOGIN_PAGE = """
 <!DOCTYPE html>
@@ -12,7 +12,6 @@ LOGIN_PAGE = """
   <input type="text" id="pwd" placeholder="Enter 3-digit password" maxlength="3">
   <button onclick="submitLogin()">Login</button>
   <p id="result"></p>
-
   <script>
     async function submitLogin() {
       const pwd = document.getElementById('pwd').value;
