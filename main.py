@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template_string
 
 app = Flask(__name__)
-CORRECT_PASSWORD = "482"  # pick your own 3-digit password
+CORRECT_PASSWORD = "050"  # pick your own 3-digit password
 
 LOGIN_PAGE = """
 <!DOCTYPE html>
